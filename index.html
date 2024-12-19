@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <script type="module" src="/src/swiper.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <a href="#" class="logo">JCP</a>
+
+        <input type="checkbox" id="menu__check" hidden />
+        <label for="menu__check" class="menu__icons">
+          <img src="./src/imgs/menu.svg" alt="menu icon" id="menu__icon" />
+          <img src="./src/imgs/close.svg" alt="close icon" id="close__icon" />
+        </label>
+
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Gallery</a>
+          <a href="#">contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <span class="toast__form">✅ Register successfully! </span>
+        <form class="form">
+          <h2 class="form__title title">¡Register!</h2>
+
+          <div class="form__inputs">
+            <label class="form__label">
+              <input
+                type="text"
+                class="form__input"
+                placeholder=" "
+                name="first"
+              />
+              <span class="form__span">First:</span>
+              <span class="firt__error error"></span>
+            </label>
+            <label class="form__label">
+              <input
+                type="email"
+                class="form__input"
+                placeholder=" "
+                name="email"
+              />
+              <span class="form__span">Email:</span>
+              <span class="email__error error"></span>
+            </label>
+          </div>
+
+          <button type="submit" class="form__button">Register</button>
+        </form>
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                class="swiper__img"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                alt="pokemon 1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper__img"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper__img"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+        <section class="faqs">
+          <h2 class="faqs__title title">Faqs</h2>
+          <ul class="faqs__list">
+            <li class="faq__item">
+              <h3 class="question">
+                <label for="question_1" class="question__label">
+                  Question 1
+                  <span class="question__span"></span>
+                </label>
+              </h3>
+              <input type="checkbox" id="question_1" hidden />
+              <div class="question__answer">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                  voluptatum molestias! Expedita, quasi harum! Odit
+                  exercitationem laudantium illum blanditiis fuga est! Explicabo
+                  quas consectetur impedit quibusdam nulla aliquid aut dolor?
+                </p>
+              </div>
+            </li>
+
+            <li class="faq__item">
+              <h3 class="question">
+                <label for="question_2" class="question__label">
+                  Question 2
+                  <span class="question__span"></span>
+                </label>
+              </h3>
+              <input type="checkbox" id="question_2" hidden />
+              <div class="question__answer">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                  voluptatum molestias! Expedita, quasi harum! Odit
+                  exercitationem laudantium illum blanditiis fuga est! Explicabo
+                  quas consectetur impedit quibusdam nulla aliquid aut dolor?
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
